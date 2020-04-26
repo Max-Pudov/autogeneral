@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: "@project.name@"
+    build:
+      version: "@project.version@"
+      buildNumber: "@buildNumber@"
+      timestamp: "@timestamp@"
+  datasource:
+    driverClassName: "org.postgresql.Driver"
+    url: "jdbc:postgresql://localhost:5432/autogeneral?currentSchema=autogeneral"
+    username: "postgres"
+    password:
+    hikari:
+      poolName: "@project.name@-connection-pool"
+      minimumIdle: "3"
+      maximumPoolSize: "10"
+      idleTimeout: "30000"
+      connectionTimeout: "60000"
+  flyway:
+    url: "jdbc:postgresql://localhost:5432/autogeneral?currentSchema=autogeneral"
+    user: "postgres"
+    password:
