@@ -84,7 +84,6 @@ public class TodoServiceTest {
   @Test
   public void testUpdateWrongId() {
     //GIVEN
-    Todo todo = createTodoMock(0, "unknown todo");
     when(repository.find(0)).thenReturn(null);
     ToDoItemUpdateRequest update = new ToDoItemUpdateRequest("update todo", true);
 

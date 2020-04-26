@@ -59,8 +59,7 @@ public class TodoController {
       produces = MediaType.APPLICATION_JSON_VALUE
   )
   public ToDoItem createTodo(@Valid @RequestBody TodoItemAddRequest todoRequestDto) {
-    ToDoItem todo = todoService.createTodo(todoRequestDto);
-    return todo;
+    return todoService.createTodo(todoRequestDto);
   }
 
   @Operation(

@@ -1,7 +1,6 @@
 package au.com.autogeneral.repository;
 
 import au.com.autogeneral.domain.Todo;
-import au.com.autogeneral.exception.TodoNotFoundException;
 import java.sql.Timestamp;
 import java.util.Map;
 import javax.sql.DataSource;
