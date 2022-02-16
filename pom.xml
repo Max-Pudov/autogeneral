@@ -19,7 +19,7 @@
     <flyway-core.version>6.4.0</flyway-core.version>
     <otj-pg-embedded.version>0.13.3</otj-pg-embedded.version>
     <springdoc-openapi-ui.version>1.3.4</springdoc-openapi-ui.version>
-    <postgresql.version>42.2.12</postgresql.version>
+    <postgresql.version>42.3.3</postgresql.version>
   </properties>
 
   <dependencies>
